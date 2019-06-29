@@ -24,6 +24,19 @@ function love.draw()
   love.graphics.setColor(1, 0, 0, 1)
   love.graphics.circle("fill", button.x, button.y, button.size)
   --set score and print
+  love.graphics.setFont(myfont)
   love.graphics.setColor(1, 1, 1, 1)
   love.graphics.print(score)
+end
+
+function love.mousepressed(x, y, b, isTouch)
+  if b == 1 then
+    if distanceBetween(button.x, button.y, love.mouse.getX(), love.mouse.getY()) < button.size then
+      score = score + 1
+    end
+  end
+end
+-- Fórmula de cauculo de ditancia entre 2 objetos.
+function distanceBetween(x1, y1, x2, y2)
+  return math.sqrt((y2 - y1)^2 + (x2 - x1)^2)
 end
