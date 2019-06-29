@@ -11,7 +11,7 @@ function love.load()
   espera = 3
 
   myfont = love.graphics.newFont(40)
-
+--
 end
 
 function love.update(dt)
