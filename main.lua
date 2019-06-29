@@ -28,7 +28,7 @@ function love.draw()
   love.graphics.setColor(1, 1, 1, 1)
   love.graphics.print(score)
 end
-
+--Detecção de clique do mouse + posicionamento.
 function love.mousepressed(x, y, b, isTouch)
   if b == 1 then
     if distanceBetween(button.x, button.y, love.mouse.getX(), love.mouse.getY()) < button.size then
