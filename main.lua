@@ -36,7 +36,7 @@ function love.mousepressed(x, y, b, isTouch)
     end
   end
 end
--- Fórmula de cauculo de ditancia entre 2 objetos.
+-- Fórmula de cálculo de ditancia entre 2 objetos.
 function distanceBetween(x1, y1, x2, y2)
   return math.sqrt((y2 - y1)^2 + (x2 - x1)^2)
 end
